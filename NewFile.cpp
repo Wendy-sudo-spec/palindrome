@@ -2,7 +2,8 @@
 using namespace std;
 bool is_palindrome(string text)
 {
-	for(int i= 0; i < text.length() / 2; i++)
+	int i;
+	for( i= 0; i < text.length() / 2; i++)
 		if(text[i] != text[text.length() - i - 1])
 			return false;
 	return true;
@@ -17,6 +18,7 @@ int main()
 		cout<<x<<" is palindrome"<<endl;
 	}
 	else{ 
-		cout<<x<<" is not a palindrome"}
+		cout<<x<<" is not a palindrome"<<endl;
+	}
 }
 
