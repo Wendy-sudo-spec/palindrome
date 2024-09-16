@@ -9,20 +9,14 @@ bool is_palindrome(string text)
 }
 int main()
 {
-	string test1 = "hannah";
-	string test2 = "race star";
-	string test3 = "madam";
-	if(is_palindrome(test1))
-		cout << test1 << " ->is a palindrome" << endl;
-	else
-		cout << test1 <<"  ->is not a palindrome" << endl;
-	if(is_palindrome(test2))
-		cout << test2 << " ->is a palindrome" << endl;
-	else
-		cout << test2 <<" ->is not a palindrome" << endl;
-    if(is_palindrome(test3))
-			 cout<<test3<<" ->is a palindrome" << endl;
-	else
-		cout << test3 << " ->is not a palindrome" << endl;
+	
+	string x;
+	cout<<"enter a word to test if it is palindrome"<<endl;
+	cin>>x;
+	if (is_palindrome(x)){
+		cout<<x<<" is palindrome"<<endl;
+	}
+	else{ 
+		cout<<x<<" is not a palindrome"}
 }
 
